@@ -17,3 +17,4 @@ You will learn how HTML is used to define the content of a web page and start to
 You'll accomplish this while conforming to a style guide which is an important constraint once you step into any existing development position.
 
 <!-- Added this to check if this will get synced to the Desktop without using Git -->
+<!-- This is check #2 -->
