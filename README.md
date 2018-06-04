@@ -15,6 +15,3 @@ In this project you’ll build a great looking portfolio where you can show off 
 You will learn how HTML is used to define the content of a web page and start to think of every web page as a number of boxes on the screen. You’ll then learn how to position those boxes and make them beautiful using CSS.
 
 You'll accomplish this while conforming to a style guide which is an important constraint once you step into any existing development position.
-
-<!-- Added this to check if this will get synced to the Desktop without using Git -->
-<!-- This is check #2 -->
