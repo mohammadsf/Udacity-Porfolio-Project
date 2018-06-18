@@ -1,3 +1,22 @@
 body{
-    background-color: white;
+    background-color:#000000;
+
+}
+.header_container{
+    position: relative;
+    padding-left: 20%
+    
+}
+.container_header{
+    color: white;
+}
+/* To be added by the end (to check for responsive design */
+@media screen and (min-width: 499px){
+    
+}
+@media screen and (max-width: 500px){
+
+}
+@media screen and (max-width: 800px){
+    
 }
