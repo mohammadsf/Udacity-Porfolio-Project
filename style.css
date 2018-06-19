@@ -1,14 +1,48 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
 body{
-    background-color:#000000;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.container{
+    max-width: 950px;
+    display: flex;
+    align-items: center;
+    margin: 1.5em;
 
 }
-.header_container{
-    position: relative;
-    padding-left: 20%
-    
-}
+
 .container_header{
-    color: white;
+    display:flex;
+    align-items: center;
+
+}
+
+.logo{
+    display: flex;
+    width: 200px;
+    height: 200px;
+}
+
+.container_header_text{
+    text-align: right;
+
+}
+
+.name{
+
+}
+
+.title{
+
+}
+.line{
+    border-width: 10px;
+    border-color: #477FAF;
 }
 /* To be added by the end (to check for responsive design */
 @media screen and (min-width: 499px){
