@@ -1,56 +1,108 @@
-html{
+/* Completed */
+html {
     width: 100%;
     height: 100%;
     margin: 0;
 }
-body{
+body {
     width: 100%;
     height: 100%;
     margin: 0;
 }
-.container{
-    max-width: 950px;
+/* Complete. */
+
+/* Complete */
+.container {
+    max-width: 900px;
     display: flex;
-    align-items: center;
-    margin: 1.5em;
-
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* Removed Align-items: center; -- Because logo, name and title won't seperate and will be 
+    in the middle. */
+    /* align-items: center;   */
+    margin: 1.0em;
+    color: #477faf;
 }
+/* Complete */
 
-.container_header{
-    display:flex;
-    align-items: center;
-
-}
-
-.logo{
+.container_header {
     display: flex;
-    width: 200px;
-    height: 200px;
+    /* alugn logo, name and title to the middle vertically */
+    align-items: center; 
+    /* space between logo  & name/title */
+    justify-content: space-between;
 }
 
-.container_header_text{
+/* Complete */
+.logo {
+    display: flex;
+    max-width: 100px;
+    max-height: 100px;
+    margin: auto 0; 
+}
+/* Complete */
+
+.text_container_header {
     text-align: right;
+    /* display: flex;   */
+
+}
+/* Complete */
+
+/* Complete */
+.name {
+    /* justify-content: center */
+    margin: 0;
+    font-weight: 100;
+}
+/* Complete */
+
+/* Complete */
+.title {
+    /* justify-content: center; */
+    margin: 0;
+    font-weight: 100;
+    /* margin: 0.5em; */
+}
+/* Complete */
+
+/* Complete */
+.line {
+    width: 100%;
+    /* color name from hix help: http://chir.ag/projects/name-that-color/#477FAF */
+    border-bottom: 5px solid steelblue; 
+}
+/* Complete */
+
+
+.main_content {
 
 }
 
-.name{
-
+/* Complete */
+.main_image_container {
+    display: flex;
+    flex-direction: column;
 }
+/* Complete */
 
-.title{
-
-}
-.line{
-    border-width: 10px;
-    border-color: #477FAF;
+.main_image {
+    max-width: 1000px;
+    /* margin: auto; */
 }
 /* To be added by the end (to check for responsive design */
-@media screen and (min-width: 499px){
+@media screen and (max-width: 350px){
     
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
 
 }
 @media screen and (max-width: 800px){
     
+}
+/* test this function */
+@media screen and (min-width: 801px){
+    .container {
+        margin: 0.5em auto;
+    }
 }
