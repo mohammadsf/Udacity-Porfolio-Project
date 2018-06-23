@@ -91,10 +91,13 @@ body {
     /* margin: auto; */
 }
 
+
 .featured_projects_header{
     color: #477faf;
 
 }
+
+/*  */
 /* To be added by the end (to check for responsive design */
 @media screen and (max-width: 350px){
     
