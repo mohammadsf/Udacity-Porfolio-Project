@@ -1,116 +1,146 @@
-/* Completed */
-html {
+html, body {
     width: 100%;
     height: 100%;
     margin: 0;
+    overflow-y: auto;
 }
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-/* Complete. */
 
-/* Complete */
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
 .container {
-    max-width: 900px;
+    max-width: 1100px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* Removed Align-items: center; -- Because logo, name and title won't seperate and will be 
-    in the middle. */
-    /* align-items: center;   */
+    align-items: center;  
     margin: 1.0em;
     color: #477faf;
 }
-/* Complete */
 
 .container_header {
     display: flex;
-    /* alugn logo, name and title to the middle vertically */
     align-items: center; 
-    /* space between logo  & name/title */
     justify-content: space-between;
 }
 
-/* Complete */
 .logo {
-    display: flex;
-    max-width: 100px;
-    max-height: 100px;
-    margin: auto 0; 
+	max-width: 100px;
+	max-height: 100px;
+	display: flex;
+	margin: auto 0;
 }
-/* Complete */
+
+
 
 .text_container_header {
-    text-align: right;
-    /* display: flex;   */
-
+    text-align: right;  
+    margin: 10px;
+    font-weight: 100;
 }
-/* Complete */
 
-/* Complete */
 .name {
     /* justify-content: center */
     margin: 0;
     font-weight: 100;
 }
-/* Complete */
 
-/* Complete */
 .title {
-    /* justify-content: center; */
     margin: 0;
     font-weight: 100;
-    /* margin: 0.5em; */
 }
-/* Complete */
 
-/* Complete */
 .line {
     width: 100%;
     /* color name from hix help: http://chir.ag/projects/name-that-color/#477FAF */
-    border: 2px solid rgb(9, 43, 72); 
+    border: 2px solid #092B48;
+    border-style: inset;
 }
-/* Complete */
-
 
 .main_content {
-
-}
-
-/* Complete */
-.main_image_container {
     display: flex;
     flex-direction: column;
-}
-/* Complete */
-
-.main_image {
-    max-width: 1000px;
-    /* margin: auto; */
-}
-
-
-.featured_projects_header{
     color: #477faf;
+}
+
+.main_image_container { 
+    display: flex;
+    flex-direction: column; 
+}
+
+ .main_image {
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+} 
+
+
+.featured_projects_header h1 {
+    margin: 1.5em;
 
 }
 
-/*  */
+.projects_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project {
+    width: 30%;
+}
+
+.project_image {
+    display: block;
+}
+
+.project-name {
+    font-weight: 400;
+}
+
 /* To be added by the end (to check for responsive design */
 @media screen and (max-width: 350px){
-    
+    .project {
+        width: 100%;
+        margin: 0.5em;
+    }
+    .container_header {
+        flex-direction: column;
+    }
+    .text_container_header {
+        text-align: center;
+    }
+    .container {
+        margin: 0 2em;
+    }
+}
 }
 @media screen and (max-width: 550px){
-
+    .project {
+        widows: 70%;
+        margin: 0.5em;
+    }
 }
 @media screen and (max-width: 800px){
-    
+    .project {
+        width: 40%;
+        margin: 0.5em;
+    }
+    .projects_container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .name {
+        font-size: 20;
+    }
 }
 /* test this function */
-@media screen and (min-width: 801px){
-    .container {
+@media screen and (min-width: 1100px){
+    .container{
         margin: 0.5em auto;
     }
 }
