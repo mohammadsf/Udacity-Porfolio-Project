@@ -1,3 +1,4 @@
+/* Style.css in folder */
 html, body {
     width: 100%;
     height: 100%;
@@ -5,7 +6,7 @@ html, body {
     overflow-y: auto;
 }
 
-a {
+.link {
     text-decoration: none;
 }
 
@@ -14,7 +15,7 @@ img {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -84,6 +85,11 @@ img {
 
 }
 
+.featured_projects_header p{
+    /* margin: 1.5em; */
+    color: red;
+}
+
 .projects_container{
     display: flex;
     flex-direction: row;
@@ -103,7 +109,11 @@ img {
 }
 
 /* To be added by the end (to check for responsive design */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 400px){
+    .projects_container{
+        flex-direction: column;
+        align-items: center;
+    }
     .project {
         width: 100%;
         margin: 0.5em;
@@ -118,7 +128,7 @@ img {
         margin: 0 2em;
     }
 }
-}
+
 @media screen and (max-width: 550px){
     .project {
         widows: 70%;
